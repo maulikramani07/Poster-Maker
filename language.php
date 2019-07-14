@@ -1,0 +1,24 @@
+<?php
+	session_start();
+ 	include('lang.php');
+ 	
+ 	if(!isset($_SESSION['check']))
+ 	{
+ 		if(!isset($_GET['lang']))
+ 		{
+ 			$select='en';
+ 		}
+ 		else
+ 		{
+ 			$select=$_GET['lang'];
+ 		}
+ 		$_SESSION['check']=$select;
+ 	}
+ 	else
+ 	{
+ 		if(isset($_GET['lang'])){
+ 			$_SESSION['check']=$_GET['lang'];
+ 		}
+ 		$select=$_SESSION['check'];
+ 	}
+?>
