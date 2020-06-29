@@ -2,7 +2,6 @@
 
 <!-- here i just add comment to test git  -->
 
-<p>this is just for testing</p>
 
 
 <!DOCTYPE html>
